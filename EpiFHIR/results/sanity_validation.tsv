@@ -1,0 +1,6 @@
+results/sanity/00_unmodified.json	0	0	3596	
+results/sanity/01_missing_required_status.json	1	0	97	Bundle.entry[9].resource.ofType(MedicationRequest) :: MedicationRequest.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/MedicationRequest) || 
+results/sanity/02_invalid_date.json	2	0	48	Bundle.entry[4].resource.ofType(Condition).onset.ofType(dateTime) :: Not a valid date/time (2021-13-45) || Bundle.entry[4].resource.ofType(Condition).onset.ofType(dateTime) :: Not a valid date/time (Invalid date/time format: '2021-13-45') || 
+results/sanity/03_unknown_element.json	1	0	42	Bundle.entry[7].resource :: Unrecognised property '@fooBar' || 
+results/sanity/04_wrong_datatype.json	3	0	39	Bundle.entry[0].resource.birthDate :: Error parsing JSON: the primitive value must be a string || Bundle.entry[0].resource.ofType(Patient).birthDate :: Not a valid date ({0}) || Bundle.entry[0].resource.ofType(Patient).birthDate :: Not a valid date (Invalid date/time format: '19990101': Expected character '-' at index 4 but found 0) || 
+results/sanity/05_invalid_status_code.json	0	0	36	

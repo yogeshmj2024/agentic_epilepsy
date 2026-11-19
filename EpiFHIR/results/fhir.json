@@ -1,0 +1,124 @@
+{
+ "cohort": {
+  "patients": 2095,
+  "male": 998,
+  "female": 1097,
+  "age_onset_median": 5.987679671457905,
+  "age_onset_iqr": [
+   0.7091033538672142,
+   12.867898699520875
+  ],
+  "with_epilepsy_dx": 1101,
+  "deceased": 630,
+  "race": {
+   "white": 1709,
+   "black": 173,
+   "asian": 138,
+   "other": 43,
+   "hawaiian": 24,
+   "native": 8
+  },
+  "ethnicity": {
+   "nonhispanic": 1931,
+   "hispanic": 164
+  },
+  "seizure_encounters": 3341,
+  "seizure_enc_per_patient_median": 1.0,
+  "seizure_enc_per_patient_max": 7,
+  "eeg_procedures": 3341,
+  "asm_orders": 5697,
+  "asm_by_drug": {
+   "clonazepam": 1954,
+   "diazepam": 1937,
+   "carbamazepine": 1806
+  },
+  "patients_with_asm": 2095,
+  "total_conditions": 5291,
+  "total_encounters": 71387,
+  "total_procedures": 3341,
+  "total_medications": 5697,
+  "distinct_condition_codes": 3
+ },
+ "resources": {
+  "Patient": 2095,
+  "Encounter": 6182,
+  "Condition": 5291,
+  "Procedure": 3341,
+  "MedicationRequest": 5697
+ },
+ "ontology_coding": {
+  "conditions": 5291,
+  "ont_by_xref": 1101,
+  "ont_by_text": 4190,
+  "ont_none": 0,
+  "sent_to_review": 0
+ },
+ "ontology_by_condition_code": {
+  "128613002|Seizure disorder (disorder)": "seizure",
+  "1290882004|History of seizure (situation)": "history",
+  "84757009|Epilepsy (disorder)": "epilepsy"
+ },
+ "export_ms_per_patient": {
+  "median": 3.8060340002630255,
+  "p95": 5.691897500310006
+ },
+ "bundle_kb": {
+  "median": 5.607421875,
+  "total_mb": 13.090662002563477
+ },
+ "hapi_ours": {
+  "bundles": 2095,
+  "bundles_zero_errors": 2095,
+  "total_errors": 0,
+  "total_warnings": 0,
+  "median_ms": 7.0,
+  "sample_msgs": [],
+  "unknown_profile_msgs_in_first5": 0
+ },
+ "hapi_native": {
+  "bundles": 100,
+  "bundles_zero_errors": 0,
+  "total_errors": 15905,
+  "total_warnings": 0,
+  "median_ms": 771.5,
+  "sample_msgs": [
+   "Bundle.entry[0].resource.ofType(Patient).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown || Bundle.entry[1].resource.ofType(Encounter).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/S",
+   "Bundle.entry[0].resource.ofType(Patient).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown || Bundle.entry[1].resource.ofType(Encounter).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/S",
+   "Bundle.entry[0].resource.ofType(Patient).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown || Bundle.entry[1].resource.ofType(Encounter).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/S",
+   "Bundle.entry[0].resource.ofType(Patient).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown || Bundle.entry[1].resource.ofType(Encounter).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/S",
+   "Bundle.entry[0].resource.ofType(Patient).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient' has not been checked because it is unknown || Bundle.entry[1].resource.ofType(Encounter).meta.profile[0] :: Profile reference 'http://hl7.org/fhir/us/core/S"
+  ],
+  "unknown_profile_msgs_in_first5": 500,
+  "error_categories": {
+   "unknown US Core profile (not available offline)": 15905,
+   "other": 0
+  },
+  "other_top": []
+ },
+ "concordance": {
+  "Condition": {
+   "ours": 5291,
+   "native": 5291,
+   "both": 5291,
+   "patients_identical": 2095,
+   "patients_compared": 2095,
+   "jaccard": 1.0
+  },
+  "MedicationRequest": {
+   "ours": 5697,
+   "native": 5697,
+   "both": 5697,
+   "patients_identical": 2095,
+   "patients_compared": 2095,
+   "jaccard": 1.0
+  },
+  "Procedure": {
+   "ours": 3341,
+   "native": 3341,
+   "both": 3341,
+   "patients_identical": 2095,
+   "patients_compared": 2095,
+   "jaccard": 1.0
+  }
+ }
+}

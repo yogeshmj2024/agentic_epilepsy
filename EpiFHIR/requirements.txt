@@ -1,0 +1,11 @@
+rdflib>=7.0
+simplemma>=2.0
+scikit-learn>=1.5
+numpy
+pandas
+rapidfuzz>=3.0
+simple-icd-10-cm
+xgboost>=2.0
+sqlalchemy>=2.0
+psycopg2-binary
+matplotlib

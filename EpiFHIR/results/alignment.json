@@ -1,0 +1,1033 @@
+{
+ "ontology": {
+  "classes": 1915,
+  "exact_synonyms": 2323,
+  "from_epso": 250,
+  "surface_forms_indexed": 3362,
+  "xref_counts": {
+   "SNOMED": 321,
+   "ICD10CM": 148,
+   "ICD9CM": 108,
+   "UMLS": 634,
+   "MESH": 362
+  }
+ },
+ "benchmarkA": {
+  "queries_total": 876,
+  "excluded_ambiguous": 30,
+  "tune": 423,
+  "test": 423,
+  "test_nontrivial": 384,
+  "tau_selected": 0.65,
+  "tune_sweep": [
+   {
+    "tau": 0.3,
+    "coverage": 85.81560283687944,
+    "precision": 64.73829201101928,
+    "recall": 55.55555555555556,
+    "f1": 0.5979643765903307
+   },
+   {
+    "tau": 0.35,
+    "coverage": 85.1063829787234,
+    "precision": 65.0,
+    "recall": 55.319148936170215,
+    "f1": 0.5977011494252874
+   },
+   {
+    "tau": 0.4,
+    "coverage": 84.63356973995272,
+    "precision": 65.08379888268156,
+    "recall": 55.08274231678487,
+    "f1": 0.5966709346991037
+   },
+   {
+    "tau": 0.45,
+    "coverage": 83.451536643026,
+    "precision": 65.72237960339945,
+    "recall": 54.84633569739953,
+    "f1": 0.597938144329897
+   },
+   {
+    "tau": 0.5,
+    "coverage": 81.08747044917257,
+    "precision": 67.05539358600583,
+    "recall": 54.37352245862884,
+    "f1": 0.6005221932114883
+   },
+   {
+    "tau": 0.55,
+    "coverage": 78.25059101654847,
+    "precision": 68.27794561933534,
+    "recall": 53.42789598108747,
+    "f1": 0.5994694960212201
+   },
+   {
+    "tau": 0.6,
+    "coverage": 71.63120567375887,
+    "precision": 71.94719471947195,
+    "recall": 51.536643026004725,
+    "f1": 0.6005509641873278
+   },
+   {
+    "tau": 0.65,
+    "coverage": 67.37588652482269,
+    "precision": 75.43859649122807,
+    "recall": 50.82742316784869,
+    "f1": 0.6073446327683616
+   },
+   {
+    "tau": 0.7,
+    "coverage": 60.047281323877066,
+    "precision": 78.74015748031496,
+    "recall": 47.28132387706856,
+    "f1": 0.5908419497784342
+   },
+   {
+    "tau": 0.75,
+    "coverage": 54.37352245862884,
+    "precision": 79.56521739130434,
+    "recall": 43.262411347517734,
+    "f1": 0.5604900459418071
+   },
+   {
+    "tau": 0.8,
+    "coverage": 45.8628841607565,
+    "precision": 82.4742268041237,
+    "recall": 37.825059101654844,
+    "f1": 0.5186385737439222
+   },
+   {
+    "tau": 0.85,
+    "coverage": 35.9338061465721,
+    "precision": 86.18421052631578,
+    "recall": 30.969267139479907,
+    "f1": 0.45565217391304347
+   },
+   {
+    "tau": 0.9,
+    "coverage": 25.53191489361702,
+    "precision": 90.74074074074075,
+    "recall": 23.167848699763592,
+    "f1": 0.3691148775894538
+   }
+  ],
+  "test_sweep": [
+   {
+    "tau": 0.3,
+    "coverage": 90.30732860520095,
+    "precision": 61.25654450261781,
+    "recall": 55.319148936170215,
+    "f1": 0.5813664596273292
+   },
+   {
+    "tau": 0.35,
+    "coverage": 89.83451536643027,
+    "precision": 61.31578947368421,
+    "recall": 55.08274231678487,
+    "f1": 0.5803237858032378
+   },
+   {
+    "tau": 0.4,
+    "coverage": 87.94326241134752,
+    "precision": 61.55913978494624,
+    "recall": 54.1371158392435,
+    "f1": 0.5761006289308176
+   },
+   {
+    "tau": 0.45,
+    "coverage": 87.23404255319149,
+    "precision": 62.05962059620597,
+    "recall": 54.1371158392435,
+    "f1": 0.5782828282828283
+   },
+   {
+    "tau": 0.5,
+    "coverage": 84.63356973995272,
+    "precision": 63.687150837988824,
+    "recall": 53.90070921985816,
+    "f1": 0.5838668373879642
+   },
+   {
+    "tau": 0.55,
+    "coverage": 82.74231678486997,
+    "precision": 64.57142857142857,
+    "recall": 53.42789598108747,
+    "f1": 0.5847347994825356
+   },
+   {
+    "tau": 0.6,
+    "coverage": 78.25059101654847,
+    "precision": 67.06948640483384,
+    "recall": 52.4822695035461,
+    "f1": 0.5888594164456232
+   },
+   {
+    "tau": 0.65,
+    "coverage": 71.15839243498817,
+    "precision": 70.09966777408638,
+    "recall": 49.881796690307326,
+    "f1": 0.5828729281767956
+   },
+   {
+    "tau": 0.7,
+    "coverage": 62.88416075650118,
+    "precision": 73.68421052631578,
+    "recall": 46.335697399527184,
+    "f1": 0.5689404934687954
+   },
+   {
+    "tau": 0.75,
+    "coverage": 56.26477541371158,
+    "precision": 77.73109243697479,
+    "recall": 43.73522458628842,
+    "f1": 0.5597579425113466
+   },
+   {
+    "tau": 0.8,
+    "coverage": 45.62647754137116,
+    "precision": 83.41968911917098,
+    "recall": 38.061465721040186,
+    "f1": 0.5227272727272726
+   },
+   {
+    "tau": 0.85,
+    "coverage": 34.515366430260045,
+    "precision": 88.35616438356165,
+    "recall": 30.49645390070922,
+    "f1": 0.4534270650263621
+   },
+   {
+    "tau": 0.9,
+    "coverage": 25.768321513002363,
+    "precision": 89.90825688073394,
+    "recall": 23.167848699763592,
+    "f1": 0.3684210526315789
+   }
+  ],
+  "systems": {
+   "EpiAlign (full)": {
+    "n": 423,
+    "predicted": 301,
+    "correct": 211,
+    "coverage": 71.15839243498817,
+    "precision": 70.09966777408638,
+    "recall": 49.881796690307326,
+    "f1": 0.5828729281767956,
+    "precision_ci": [
+     64.70070483443332,
+     74.99204051265843
+    ],
+    "recall_ci": [
+     45.13944136783958,
+     54.62627968652812
+    ],
+    "ms_per_query": 0.5287249858147828
+   },
+   "Exact string match": {
+    "n": 423,
+    "predicted": 9,
+    "correct": 9,
+    "coverage": 2.127659574468085,
+    "precision": 100.0,
+    "recall": 2.127659574468085,
+    "f1": 0.04166666666666667,
+    "precision_ci": [
+     70.08472464490407,
+     100.0
+    ],
+    "recall_ci": [
+     1.1233135923214983,
+     3.9937134266007432
+    ],
+    "ms_per_query": 0.0006452884152524744
+   },
+   "Fuzzy matching (rapidfuzz WRatio)": {
+    "n": 423,
+    "predicted": 388,
+    "correct": 158,
+    "coverage": 91.725768321513,
+    "precision": 40.72164948453608,
+    "recall": 37.35224586288416,
+    "f1": 0.38964241676942046,
+    "precision_ci": [
+     35.947002379462035,
+     45.67822577395505
+    ],
+    "recall_ci": [
+     32.875498386761066,
+     42.05665443058381
+    ],
+    "threshold": 0.7500000000000002,
+    "ms_per_query": 4.081265219858203
+   },
+   "Word TF-IDF retrieval": {
+    "n": 423,
+    "predicted": 352,
+    "correct": 173,
+    "coverage": 83.21513002364067,
+    "precision": 49.14772727272727,
+    "recall": 40.8983451536643,
+    "f1": 0.4464516129032257,
+    "precision_ci": [
+     43.96252936082852,
+     54.35132714161526
+    ],
+    "recall_ci": [
+     36.31536037762101,
+     45.64516080869258
+    ],
+    "threshold": 0.39999999999999997,
+    "ms_per_query": 0.627447420802622
+   }
+  },
+  "ablations": {
+   "without lemmatisation": {
+    "n": 423,
+    "predicted": 290,
+    "correct": 203,
+    "coverage": 68.5579196217494,
+    "precision": 70.0,
+    "recall": 47.99054373522459,
+    "f1": 0.5694249649368864,
+    "precision_ci": [
+     64.49227372556331,
+     74.98477785596906
+    ],
+    "recall_ci": [
+     43.268994425427444,
+     52.74826349882361
+    ],
+    "ms_per_query": 0.5494523356987486
+   },
+   "without trie (full scan)": {
+    "n": 423,
+    "predicted": 306,
+    "correct": 214,
+    "coverage": 72.34042553191489,
+    "precision": 69.93464052287581,
+    "recall": 50.59101654846335,
+    "f1": 0.5871056241426612,
+    "precision_ci": [
+     64.57567929033866,
+     74.79927875273884
+    ],
+    "recall_ci": [
+     45.84259347461622,
+     55.328801253545215
+    ],
+    "ms_per_query": 1.6171027281336618
+   },
+   "without Stage 3 (token Jaccard)": {
+    "n": 423,
+    "predicted": 147,
+    "correct": 117,
+    "coverage": 34.751773049645394,
+    "precision": 79.59183673469387,
+    "recall": 27.659574468085108,
+    "f1": 0.4105263157894737,
+    "precision_ci": [
+     72.36240747700812,
+     85.31398948510312
+    ],
+    "recall_ci": [
+     23.612263984507674,
+     32.10901529098936
+    ],
+    "ms_per_query": 0.06367011583902767
+   },
+   "with related synonyms indexed": {
+    "n": 423,
+    "predicted": 313,
+    "correct": 214,
+    "coverage": 73.99527186761229,
+    "precision": 68.370607028754,
+    "recall": 50.59101654846335,
+    "f1": 0.5815217391304348,
+    "precision_ci": [
+     63.02249493586739,
+     73.27324400750369
+    ],
+    "recall_ci": [
+     45.84259347461622,
+     55.328801253545215
+    ],
+    "ms_per_query": 0.5721150945631462
+   }
+  },
+  "nontrivial": {
+   "n": 384,
+   "predicted": 262,
+   "correct": 173,
+   "coverage": 68.22916666666667,
+   "precision": 66.03053435114504,
+   "recall": 45.05208333333333,
+   "f1": 0.5356037151702786,
+   "precision_ci": [
+    60.10090630675226,
+    71.49685717345552
+   ],
+   "recall_ci": [
+    40.14906356557491,
+    50.0531220689728
+   ]
+  },
+  "routes": {
+   "scored": 346,
+   "exact": 38,
+   "no_candidate": 39
+  },
+  "robustness": {
+   "typo": {
+    "EpiAlign": 28.132387706855795,
+    "Exact": 0.2364066193853428,
+    "Fuzzy": 26.47754137115839,
+    "WordTFIDF": 26.24113475177305
+   },
+   "word_order": {
+    "EpiAlign": 49.881796690307326,
+    "Exact": 0.9456264775413712,
+    "Fuzzy": 33.80614657210402,
+    "WordTFIDF": 41.13475177304964
+   },
+   "inflection": {
+    "EpiAlign": 47.28132387706856,
+    "Exact": 1.6548463356973995,
+    "Fuzzy": 32.15130023640662,
+    "WordTFIDF": 32.62411347517731
+   },
+   "case_punct": {
+    "EpiAlign": 49.881796690307326,
+    "Exact": 0.0,
+    "Fuzzy": 27.423167848699766,
+    "WordTFIDF": 40.8983451536643
+   }
+  }
+ },
+ "benchmarkB": {
+  "codes_total": 95,
+  "systems": {
+   "EpiAlign (full)": {
+    "consistent": 1,
+    "inconsistent": 3,
+    "unverifiable": 51,
+    "abstain": 40,
+    "aligned": 55,
+    "consistency_of_verifiable": 25.0,
+    "consistency_ci": [
+     4.558606264463622,
+     69.93639475573634
+    ]
+   },
+   "Exact string match": {
+    "consistent": 0,
+    "inconsistent": 0,
+    "unverifiable": 3,
+    "abstain": 92,
+    "aligned": 3,
+    "consistency_of_verifiable": null,
+    "consistency_ci": [
+     0.0,
+     0.0
+    ]
+   },
+   "Fuzzy matching (rapidfuzz WRatio)": {
+    "consistent": 6,
+    "inconsistent": 50,
+    "unverifiable": 39,
+    "abstain": 0,
+    "aligned": 95,
+    "consistency_of_verifiable": 10.714285714285714,
+    "consistency_ci": [
+     5.003867458119086,
+     21.468686751661398
+    ]
+   },
+   "Word TF-IDF retrieval": {
+    "consistent": 1,
+    "inconsistent": 8,
+    "unverifiable": 66,
+    "abstain": 20,
+    "aligned": 75,
+    "consistency_of_verifiable": 11.11111111111111,
+    "consistency_ci": [
+     1.9890371327130536,
+     43.50062147680601
+    ]
+   }
+  },
+  "examples": [
+   {
+    "code": "G40-G47",
+    "title": "Episodic and paroxysmal disorders (G40-G47)",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40",
+    "title": "Epilepsy and recurrent seizures",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G400",
+    "title": "Localization-related (focal) (partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4000",
+    "title": "Localization-related (focal) (partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset, not intractable",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40001",
+    "title": "Localization-related (focal) (partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset, not intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40009",
+    "title": "Localization-related (focal) (partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset, not intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4001",
+    "title": "Localization-related (focal) (partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset, intractable",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40011",
+    "title": "Localization-related (focal) (partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset, intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40019",
+    "title": "Localization-related (focal) (partial) idiopathic epilepsy and epileptic syndromes with seizures of localized onset, intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G401",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4010",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, not intractable",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40101",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, not intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40109",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, not intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4011",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, intractable",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40111",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40119",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with simple partial seizures, intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G402",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4020",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures, not intractable",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40201",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures, not intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40209",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures, not intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4021",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures, intractable",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40211",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures, intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40219",
+    "title": "Localization-related (focal) (partial) symptomatic epilepsy and epileptic syndromes with complex partial seizures, intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G403",
+    "title": "Generalized idiopathic epilepsy and epileptic syndromes",
+    "predicted": "idiopathic generalized epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G4030",
+    "title": "Generalized idiopathic epilepsy and epileptic syndromes, not intractable",
+    "predicted": "idiopathic generalized epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40301",
+    "title": "Generalized idiopathic epilepsy and epileptic syndromes, not intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40309",
+    "title": "Generalized idiopathic epilepsy and epileptic syndromes, not intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4031",
+    "title": "Generalized idiopathic epilepsy and epileptic syndromes, intractable",
+    "predicted": "idiopathic generalized epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40311",
+    "title": "Generalized idiopathic epilepsy and epileptic syndromes, intractable, with status epilepticus",
+    "predicted": "idiopathic generalized epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40319",
+    "title": "Generalized idiopathic epilepsy and epileptic syndromes, intractable, without status epilepticus",
+    "predicted": "idiopathic generalized epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40A",
+    "title": "Absence epileptic syndrome",
+    "predicted": "epilepsy",
+    "judgement": "inconsistent"
+   },
+   {
+    "code": "G40A0",
+    "title": "Absence epileptic syndrome, not intractable",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40A01",
+    "title": "Absence epileptic syndrome, not intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40A09",
+    "title": "Absence epileptic syndrome, not intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40A1",
+    "title": "Absence epileptic syndrome, intractable",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40A11",
+    "title": "Absence epileptic syndrome, intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40A19",
+    "title": "Absence epileptic syndrome, intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40B",
+    "title": "Juvenile myoclonic epilepsy [impulsive petit mal]",
+    "predicted": "juvenile myoclonic epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40B0",
+    "title": "Juvenile myoclonic epilepsy, not intractable",
+    "predicted": "juvenile myoclonic epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40B01",
+    "title": "Juvenile myoclonic epilepsy, not intractable, with status epilepticus",
+    "predicted": "juvenile myoclonic epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40B09",
+    "title": "Juvenile myoclonic epilepsy, not intractable, without status epilepticus",
+    "predicted": "juvenile myoclonic epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40B1",
+    "title": "Juvenile myoclonic epilepsy, intractable",
+    "predicted": "juvenile myoclonic epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40B11",
+    "title": "Juvenile myoclonic epilepsy, intractable, with status epilepticus",
+    "predicted": "juvenile myoclonic epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40B19",
+    "title": "Juvenile myoclonic epilepsy, intractable, without status epilepticus",
+    "predicted": "juvenile myoclonic epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40C",
+    "title": "Lafora progressive myoclonus epilepsy",
+    "predicted": "progressive myoclonus epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40C0",
+    "title": "Lafora progressive myoclonus epilepsy, not intractable",
+    "predicted": "progressive myoclonus epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40C01",
+    "title": "Lafora progressive myoclonus epilepsy, not intractable, with status epilepticus",
+    "predicted": "progressive myoclonus epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40C09",
+    "title": "Lafora progressive myoclonus epilepsy, not intractable, without status epilepticus",
+    "predicted": "progressive myoclonus epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40C1",
+    "title": "Lafora progressive myoclonus epilepsy, intractable",
+    "predicted": "progressive myoclonus epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40C11",
+    "title": "Lafora progressive myoclonus epilepsy, intractable, with status epilepticus",
+    "predicted": "progressive myoclonus epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40C19",
+    "title": "Lafora progressive myoclonus epilepsy, intractable, without status epilepticus",
+    "predicted": "progressive myoclonus epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G404",
+    "title": "Other generalized epilepsy and epileptic syndromes",
+    "predicted": "epilepsy",
+    "judgement": "inconsistent"
+   },
+   {
+    "code": "G4040",
+    "title": "Other generalized epilepsy and epileptic syndromes, not intractable",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40401",
+    "title": "Other generalized epilepsy and epileptic syndromes, not intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40409",
+    "title": "Other generalized epilepsy and epileptic syndromes, not intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4041",
+    "title": "Other generalized epilepsy and epileptic syndromes, intractable",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40411",
+    "title": "Other generalized epilepsy and epileptic syndromes, intractable, with status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40419",
+    "title": "Other generalized epilepsy and epileptic syndromes, intractable, without status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G4042",
+    "title": "Cyclin-Dependent Kinase-Like 5 Deficiency Disorder",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G405",
+    "title": "Epileptic seizures related to external causes",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4050",
+    "title": "Epileptic seizures related to external causes, not intractable",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40501",
+    "title": "Epileptic seizures related to external causes, not intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40509",
+    "title": "Epileptic seizures related to external causes, not intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G408",
+    "title": "Other epilepsy and recurrent seizures",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4080",
+    "title": "Other epilepsy",
+    "predicted": "epilepsy",
+    "judgement": "inconsistent"
+   },
+   {
+    "code": "G40801",
+    "title": "Other epilepsy, not intractable, with status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40802",
+    "title": "Other epilepsy, not intractable, without status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40803",
+    "title": "Other epilepsy, intractable, with status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40804",
+    "title": "Other epilepsy, intractable, without status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G4081",
+    "title": "Lennox-Gastaut syndrome",
+    "predicted": "Lennox-Gastaut syndrome",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40811",
+    "title": "Lennox-Gastaut syndrome, not intractable, with status epilepticus",
+    "predicted": "Lennox-Gastaut syndrome",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40812",
+    "title": "Lennox-Gastaut syndrome, not intractable, without status epilepticus",
+    "predicted": "Lennox-Gastaut syndrome",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40813",
+    "title": "Lennox-Gastaut syndrome, intractable, with status epilepticus",
+    "predicted": "Lennox-Gastaut syndrome",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40814",
+    "title": "Lennox-Gastaut syndrome, intractable, without status epilepticus",
+    "predicted": "Lennox-Gastaut syndrome",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G4082",
+    "title": "Epileptic spasms",
+    "predicted": "Epileptic spasms",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40821",
+    "title": "Epileptic spasms, not intractable, with status epilepticus",
+    "predicted": "Status epilepticus",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40822",
+    "title": "Epileptic spasms, not intractable, without status epilepticus",
+    "predicted": "Status epilepticus",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40823",
+    "title": "Epileptic spasms, intractable, with status epilepticus",
+    "predicted": "Status epilepticus",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40824",
+    "title": "Epileptic spasms, intractable, without status epilepticus",
+    "predicted": "Status epilepticus",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G4083",
+    "title": "Dravet syndrome",
+    "predicted": "Dravet syndrome",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40833",
+    "title": "Dravet syndrome, intractable, with status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40834",
+    "title": "Dravet syndrome, intractable, without status epilepticus",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G4084",
+    "title": "KCNQ2-related epilepsy",
+    "predicted": null,
+    "judgement": "abstain"
+   },
+   {
+    "code": "G40841",
+    "title": "KCNQ2-related epilepsy, not intractable, with status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40842",
+    "title": "KCNQ2-related epilepsy, not intractable, without status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40843",
+    "title": "KCNQ2-related epilepsy, intractable, with status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40844",
+    "title": "KCNQ2-related epilepsy, intractable, without status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G4089",
+    "title": "Other seizures",
+    "predicted": "seizure",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G409",
+    "title": "Epilepsy, unspecified",
+    "predicted": "epilepsy",
+    "judgement": "consistent"
+   },
+   {
+    "code": "G4090",
+    "title": "Epilepsy, unspecified, not intractable",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40901",
+    "title": "Epilepsy, unspecified, not intractable, with status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40909",
+    "title": "Epilepsy, unspecified, not intractable, without status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G4091",
+    "title": "Epilepsy, unspecified, intractable",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40911",
+    "title": "Epilepsy, unspecified, intractable, with status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   },
+   {
+    "code": "G40919",
+    "title": "Epilepsy, unspecified, intractable, without status epilepticus",
+    "predicted": "Intractable Epilepsy",
+    "judgement": "unverifiable"
+   }
+  ]
+ },
+ "runtime_s": 17.906604290008545
+}

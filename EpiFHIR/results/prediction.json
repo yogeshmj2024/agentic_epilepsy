@@ -1,0 +1,77 @@
+{
+ "index_encounters": 3069,
+ "patients": 1932,
+ "positives": 810,
+ "prevalence": 0.26392961876832843,
+ "features": [
+  "age",
+  "male",
+  "income",
+  "hispanic",
+  "white",
+  "prior_seizure_visits",
+  "days_since_last",
+  "epilepsy_dx",
+  "n_prior_conditions",
+  "on_asm",
+  "asm_carbamazepine",
+  "asm_diazepam",
+  "asm_clonazepam"
+ ],
+ "negative_control": {
+  "Logistic regression": {
+   "auroc": 0.5138004907667,
+   "ci": [
+    0.4909955331468921,
+    0.5367106506326319
+   ],
+   "brier": 0.1948782838656159,
+   "base_rate_brier": 0.19427077510513324,
+   "perm_mean": 0.49812741352832846,
+   "perm_p": 0.23529411764705882
+  },
+  "XGBoost": {
+   "auroc": 0.4987733565053913,
+   "ci": [
+    0.4770796557385692,
+    0.5212958126396995
+   ],
+   "brier": 0.19938032263288624,
+   "base_rate_brier": 0.19427077510513324,
+   "perm_mean": 0.5070834631296488,
+   "perm_p": 0.7272727272727273
+  }
+ },
+ "positive_control": {
+  "effects": {
+   "prior_seizure_visits_z": 1.2,
+   "age_z": 0.6
+  },
+  "prevalence": 0.2903225806451613,
+  "oracle_auroc": 0.8018007851188139,
+  "models": {
+   "Logistic regression": {
+    "auroc": 0.8031483078927217,
+    "ci": [
+     0.7851679366403759,
+     0.8207051859442022
+    ],
+    "brier": 0.14768062092504483,
+    "base_rate_brier": 0.20603537981269512,
+    "perm_mean": 0.4995459389322261,
+    "perm_p": 0.047619047619047616
+   },
+   "XGBoost": {
+    "auroc": 0.793893171074071,
+    "ci": [
+     0.7724630574696885,
+     0.8127883526707782
+    ],
+    "brier": 0.15066808750325422,
+    "base_rate_brier": 0.20603537981269512,
+    "perm_mean": 0.4949575465913084,
+    "perm_p": 0.2
+   }
+  }
+ }
+}

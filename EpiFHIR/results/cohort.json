@@ -1,0 +1,40 @@
+{
+ "patients": 2095,
+ "male": 998,
+ "female": 1097,
+ "age_onset_median": 5.987679671457905,
+ "age_onset_iqr": [
+  0.7091033538672142,
+  12.867898699520875
+ ],
+ "with_epilepsy_dx": 1101,
+ "deceased": 630,
+ "race": {
+  "white": 1709,
+  "black": 173,
+  "asian": 138,
+  "other": 43,
+  "hawaiian": 24,
+  "native": 8
+ },
+ "ethnicity": {
+  "nonhispanic": 1931,
+  "hispanic": 164
+ },
+ "seizure_encounters": 3341,
+ "seizure_enc_per_patient_median": 1.0,
+ "seizure_enc_per_patient_max": 7,
+ "eeg_procedures": 3341,
+ "asm_orders": 5697,
+ "asm_by_drug": {
+  "clonazepam": 1954,
+  "diazepam": 1937,
+  "carbamazepine": 1806
+ },
+ "patients_with_asm": 2095,
+ "total_conditions": 5291,
+ "total_encounters": 71387,
+ "total_procedures": 3341,
+ "total_medications": 5697,
+ "distinct_condition_codes": 3
+}
